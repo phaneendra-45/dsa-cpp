@@ -8,10 +8,8 @@ int recursive(vector<int>& arr, int index, int prev) {
     if (index == arr.size())
         return 0;
 
-    // Skip current element
     int skip = recursive(arr, index + 1, prev);
 
-    // Take current element
     int take = 0;
 
     if (prev == -1 || arr[index] > arr[prev]) {
@@ -27,7 +25,6 @@ int memoHelper(vector<int>& arr, int index, int prev,
     if (index == arr.size())
         return 0;
 
-    // prev + 1 converts -1 into index 0
     if (dp[index][prev + 1] != -1)
         return dp[index][prev + 1];
 
@@ -49,10 +46,8 @@ int tabulation(vector<int>& arr) {
     vector<vector<int>> dp(n + 1,
                            vector<int>(n + 1, 0));
 
-    // Traverse from right to left
     for (int index = n - 1; index >= 0; index--) {
 
-        // prev = -1 to index - 1
         for (int prev = index - 1; prev >= -1; prev--) {
 
             int skip = dp[index + 1][prev + 1];
