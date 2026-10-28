@@ -17,6 +17,7 @@ This repository documents my DSA journey using **C++** as I prepare for software
 - GeeksforGeeks
 - LeetCode (later)
 - Apna College Sigma Batch
+- Syntax Error Academy DSA Bootcamp 
 
 ## Topics
 
@@ -45,8 +46,8 @@ This repository documents my DSA journey using **C++** as I prepare for software
 
 | Topic | Status |
 |--------|--------|
-| Basics | 🟡 In Progress |
-| Patterns | ⬜ Not Started |
+| Basics | 🟡 Completed |
+| Patterns | ⬜ In the Process |
 | Arrays | ⬜ Not Started |
 | Strings | ⬜ Not Started |
 | Searching | ⬜ Not Started |
